@@ -1,7 +1,7 @@
 package com.google.codelabs.dicerollerkotlin
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.Toast
@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        diceImage = findViewById(R.id.dice_image)
+        diceImage = findViewById(R.id.empty_dice)
 
         val rollButton : Button = findViewById(R.id.roll_button)
         rollButton.setOnClickListener { rollDice() }
